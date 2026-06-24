@@ -1,4 +1,4 @@
-program MCPClient;
+program MCPClientExemplo;
 
 uses
   Vcl.Forms,

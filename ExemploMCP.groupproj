@@ -3,7 +3,7 @@
         <ProjectGuid>{CF407ACB-6B6B-4C7D-94B6-B5CA7D035CC0}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="MCPClient.dproj">
+        <Projects Include="MCPClientExemplo.dproj">
             <Dependencies/>
         </Projects>
         <Projects Include="MCPServerExemplo.dproj">
@@ -17,14 +17,14 @@
             <Default.Personality/>
         </BorlandProject>
     </ProjectExtensions>
-    <Target Name="MCPClient">
-        <MSBuild Projects="MCPClient.dproj"/>
+    <Target Name="MCPClientExemplo">
+        <MSBuild Projects="MCPClientExemplo.dproj"/>
     </Target>
-    <Target Name="MCPClient:Clean">
-        <MSBuild Projects="MCPClient.dproj" Targets="Clean"/>
+    <Target Name="MCPClientExemplo:Clean">
+        <MSBuild Projects="MCPClientExemplo.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="MCPClient:Make">
-        <MSBuild Projects="MCPClient.dproj" Targets="Make"/>
+    <Target Name="MCPClientExemplo:Make">
+        <MSBuild Projects="MCPClientExemplo.dproj" Targets="Make"/>
     </Target>
     <Target Name="MCPServerExemplo">
         <MSBuild Projects="MCPServerExemplo.dproj"/>
@@ -36,13 +36,13 @@
         <MSBuild Projects="MCPServerExemplo.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="MCPClient;MCPServerExemplo"/>
+        <CallTarget Targets="MCPClientExemplo;MCPServerExemplo"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="MCPClient:Clean;MCPServerExemplo:Clean"/>
+        <CallTarget Targets="MCPClientExemplo:Clean;MCPServerExemplo:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="MCPClient:Make;MCPServerExemplo:Make"/>
+        <CallTarget Targets="MCPClientExemplo:Make;MCPServerExemplo:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
