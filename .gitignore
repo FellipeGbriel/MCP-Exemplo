@@ -1,0 +1,40 @@
+# RAD Studio / Delphi build output
+Win32/
+Win64/
+Android/
+iOSDevice64/
+iOSSimulator/
+OSX64/
+__history/
+__recovery/
+
+# Local IDE/user state
+*.local
+*.identcache
+*.tvsconfig
+*.dsk
+*.stat
+
+# Compiler artifacts
+*.dcu
+*.hpp
+*.obj
+*.o
+*.map
+*.tds
+*.rsm
+*.drc
+*.ilc
+*.ild
+*.ilf
+*.ils
+
+# Backups and temporary files
+*.~*
+*.bak
+*.tmp
+*.zip
+Unit1/
+
+# Logs
+*.log
